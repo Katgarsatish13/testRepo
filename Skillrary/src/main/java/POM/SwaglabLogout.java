@@ -7,6 +7,9 @@ import org.openqa.selenium.support.PageFactory;
 
 public class SwaglabLogout {
 	private WebDriver driver;
+	@FindBy (id="react-burger-menu-btn")
+	private WebElement menuButton;
+	
 	
 	@FindBy(id="logout_sidebar_link")
 	private WebElement logoutButton;
@@ -16,9 +19,13 @@ public class SwaglabLogout {
 		PageFactory.initElements(driver,this);
 		
 	}
-	
+	public void clickMenueButton()
+	{
+		menuButton.click();
+	}
 	public void clickLogoutButton()
 	{
+		
 		logoutButton.click();
 	}
 	

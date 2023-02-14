@@ -10,6 +10,7 @@ public class TestCaseLogout extends BaseClass{
 	public void Logout()
 	{
 		SwaglabLogout sw=new SwaglabLogout(driver);
+		sw.clickMenueButton();
 		sw.clickLogoutButton();
 	}
 	
